@@ -1,0 +1,11 @@
+<a href="/">
+    <h1>{{.Site.Title}}</h1>
+</a>
+<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+{{ .Content }} 
+
+{{ range .Pages }}
+<li>
+    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+</li>
+{{ end }}
