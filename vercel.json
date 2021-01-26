@@ -2,15 +2,15 @@
     "build": {
       "env": {
         "HUGO_VERSION": "0.80.0"
-      }
-    },
-    "routes": [
+      },
+      "routes": [
         {
           "src": "/(.*)",
           "headers": { "Accept-Encoding": "br" },
           "dest": "/$1"
         }
-    ],
+      ]
+    },
     "cleanUrls": true,
     "trailingSlash": false
 }
