@@ -3,37 +3,13 @@
       "env": {
         "HUGO_VERSION": "0.80.0"
       }
-    },  
-    "headers": [
-    {
-        "source": "/(.*)",
-        "headers" : [
+    },
+    "routes": [
         {
-            "key" : "X-Content-Type-Options",
-            "value" : "nosniff"
-        },
-        {
-            "key" : "X-Frame-Options",
-            "value" : "DENY"
-        },
-        {
-            "key" : "X-XSS-Protection",
-            "value" : "1; mode=block"
-        },
-        {
-            "key" : "Accept-Encoding",
-            "value" : "br"
-        },
-        {
-            "key" : "Cache-Control",
-            "value" : "max-age=604800, immutable"
-        },
-        {
-            "key" : "Strict-Transport-Security",
-            "value" : "max-age=63072000;includeSubDomains; preload"
+          "src": "/(.*)",
+          "headers": { "Accept-Encoding": "br" },
+          "dest": "/$1"
         }
-        ]
-    }
     ],
     "cleanUrls": true,
     "trailingSlash": false
