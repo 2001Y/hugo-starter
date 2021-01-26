@@ -4,10 +4,10 @@
         "HUGO_VERSION": "0.80.0"
       }
     },
-    "rewrites": {
+    "rewrites": {[
       "source": "index,follow,archive",
       "destination": "noindex,nofollow,noarchive" 
-    },
+    ]},
     "cleanUrls": true,
     "trailingSlash": false
 }
