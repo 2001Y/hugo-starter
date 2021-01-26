@@ -7,7 +7,7 @@
     "rewrites": {
       "source": "index,follow,archive",
       "destination": "noindex,nofollow,noarchive" 
-    }
+    },
     "cleanUrls": true,
     "trailingSlash": false
 }
