@@ -22,7 +22,7 @@
         },
         {
             "key" : "Accept-Encoding",
-            "value" : "gzip, deflate, br"
+            "value" : "gzip, br"
         },
         {
             "key" : "Cache-Control",
